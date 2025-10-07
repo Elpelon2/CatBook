@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CatBook - Lector EPUB</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 20px;
+    }
+    
+    .container {
+      background: white;
+      border-radius: 20px;
+      padding: 60px 40px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+    }
+    
+    .logo {
+      font-size: 80px;
+      margin-bottom: 20px;
+      animation: float 3s ease-in-out infinite;
+    }
+    
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+    
+    h1 {
+      color: #333;
+      font-size: 48px;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+    
+    .subtitle {
+      color: #666;
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+    
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 18px 30px;
+      text-decoration: none;
+      border-radius: 12px;
+      font-size: 18px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+    
+    .btn:active {
+      transform: translateY(0);
+    }
+    
+    .btn-primary {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+    }
+    
+    .btn-secondary {
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+      color: white;
+    }
+    
+    .btn-danger {
+      background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+      color: white;
+    }
+    
+    .icon {
+      font-size: 24px;
+    }
+    
+    .footer {
+      margin-top: 40px;
+      padding-top: 30px;
+      border-top: 1px solid #e0e0e0;
+      color: #999;
+      font-size: 14px;
+    }
+    
+    @media (max-width: 600px) {
+      .container {
+        padding: 40px 25px;
+      }
+      
+      h1 {
+        font-size: 36px;
+      }
+      
+      .logo {
+        font-size: 60px;
+      }
+      
+      .subtitle {
+        font-size: 16px;
+      }
+      
+      .btn {
+        font-size: 16px;
+        padding: 16px 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">📚</div>
+    <h1>CatBook</h1>
+    <p class="subtitle">Tu lector EPUB personal</p>
+    
+    <div class="buttons">
+      <a href="https://elpelon2.github.io/CatBook/Terminos" class="btn btn-primary">
+        <span class="icon">📄</span>
+        <span>Términos y Condiciones</span>
+      </a>
+      
+      <a href="https://elpelon2.github.io/CatBook/Privacidad" class="btn btn-secondary">
+        <span class="icon">🔒</span>
+        <span>Política de Privacidad</span>
+      </a>
+      
+      <a href="https://elpelon2.github.io/CatBook/DeleteAccount" class="btn btn-danger">
+        <span class="icon">🗑️</span>
+        <span>Eliminar Cuenta</span>
+      </a>
+    </div>
+    
+    <div class="footer">
+      <p>© 2025 CatBook. Todos los derechos reservados.</p>
+      <p style="margin-top: 10px;">
+        <a href="mailto:johangsuite2@gmail.com" style="color: #667eea; text-decoration: none;">
+          johangsuite2@gmail.com
+        </a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
